@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Apk_Administrador         </string>
+    <string name="txt_user_login_admin">USUARIO       </string>
+    <string name="txt_pass_login_admin">CONTRASEÑA    </string>
+    <string name="btn_login_admin">LOGIN              </string>
+    <string name="txt_view_eval_user">EVALUAR USUARIOS</string>
+</resources>

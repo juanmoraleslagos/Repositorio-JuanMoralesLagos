@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Apk_Usuario          </string>
+    <string name="txt_rut_login_user">RUT (Ejemplo 12123456-7)   </string>
+    <string name="txt_pass_user_login">CONTRASEÑA</string>
+    <string name="btn_login_user">LOGIN          </string>
+    <string name="btn_reg_user_login">REGISTRAR  </string>
+
+    <string name="txt_rut_ing_datos">RUT (Ejemplo 12123457-0)</string>
+    <string name="txt_nom_ing_datos">NOMBRE                  </string>
+    <string name="txt_ape_pat_ing_datos">APELLIDO  PATERNO   </string>
+    <string name="txt_ape_mat_ing_datos">APELLIDO  MATERNO   </string>
+    <string name="dtm_fec_nac_ing_datos">FECHA DE NACIMIENTO </string>
+    <string name="rdb_masc_ing_datos">MASCULINO              </string>
+    <string name="rdb_fem_ing_datos">FEMENINO                </string>
+    <string name="dtm_fec_ing_datos">FECHA INGRESO           </string>
+    <string name="txt_pass_ing_datos">CONTRASEÑA             </string>
+    <string name="txt_pass_reing_datos">CONFIRME CONTRASEÑA  </string>
+    <string name="btn_reg_ing_datos">REGISTRARSE             </string>
+
+    <string name="txt_titulo_menu">MENU OPCIONES USUARIO</string>
+    <string name="btn_ver_avances_usuario">VER AVANCES </string>
+    <string name="btn_visualizar_evaluaciones">VISUALIZAR EVALUACIONES</string>
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ProcesoLogin</servlet-name>
+        <servlet-class>controlador.ProcesoLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoIngresarEntrenador</servlet-name>
+        <servlet-class>controlador.ProcesoIngresarEntrenador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoMuestraProfesion</servlet-name>
+        <servlet-class>controlador.ProcesoMuestraProfesion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProcesoLogin</servlet-name>
+        <url-pattern>/ProcesoLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoIngresarEntrenador</servlet-name>
+        <url-pattern>/ProcesoIngresarEntrenador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoMuestraProfesion</servlet-name>
+        <url-pattern>/ProcesoMuestraProfesion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
