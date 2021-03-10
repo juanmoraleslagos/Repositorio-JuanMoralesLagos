@@ -1,0 +1,51 @@
+version: '3.1'
+
+services:
+  db_ciisa_tpc:  
+    image: mysql:5.7
+    container_name: db_ciisa_tpc
+    hostname: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Ciisa2020
+      - MYSQL_DATABASE=ciisa_tpc_db
+      - MYSQL_USER=ciisa_tpc_db
+      - MYSQL_PASSWORD=Ciisa2020
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:5556:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+
+  web_ciisa_tpc:
+    build: .
+    container_name: ciisa_tpc_app
+    hostname: ciisa_tpc_app
+    restart: unless-stopped
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8300:80"
+    depends_on:
+      - db_ciisa_tpc  
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db_ciisa_tpc:db
+    ports:
+      - "9006:80"
+    environment:
+      - MYSQL_ROOT_PASSWORD=Ciisa2020
+      - MYSQL_DATABASE=ciisa_tpc_db
+      - MYSQL_USER=ciisa_tpc_db
+      - MYSQL_PASSWORD=Ciisa2020
+
+
+
+
+volumes:
+  mysql-data:
+
+networks:
+  default:
